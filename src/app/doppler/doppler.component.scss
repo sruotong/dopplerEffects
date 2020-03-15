@@ -1,0 +1,18 @@
+#doppler-component {
+  margin-top: 5vh;
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.imageCover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: hue;
+}

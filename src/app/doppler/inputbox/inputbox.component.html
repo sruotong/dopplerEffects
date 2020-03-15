@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="velocityInput">Velocity (km/s)<span *ngIf="velocity>100||velocity<-100" class="error">(Error: shoud in range -100 to 100)</span></label>
+    <span data-toggle="tooltip" data-placement="left" title="Doppler velocity: The radial component of the velocity vector of a scattering object as observed by a remote sensor, such as a Doppler radar or Doppler lidar.">
+        <input type="number" class="form-control" id="velocityInput" placeholder="Enter velocity" [(ngModel)]="velocity"
+        (ngModelChange)="updateVelocity()" min="-100" max="100">
+    </span>
+</div>
+<!--
+<ng-template #tips>
+    <h6>Doppler velocity</h6>
+    <p>The radial component of the velocity vector of a scattering object as observed by a remote sensor, such as a Doppler radar or Doppler lidar.</p>
+</ng-template>
+-->
